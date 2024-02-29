@@ -58,14 +58,14 @@ function Home() {
 
   return (
     <>
-      <div className=" grid  bg-slate-200 w-screen h-screen place-content-center ">
-        <div className="  rounded-lg w-[80vw] h-[80vh] bg-red-500 ">
-          <div className="h-[15%] bg-red-500 rounded-lg  flex items-center">
+      <div className="  flex justify-center sm:items-center  bg-red-500 w-screen h-screen  ">
+        <div className="   w-[100%] h-[90%] sm:h-[100%] bg-red-500 ">
+          <div className=" h-[10%] sm:h-[15%] bg-red-500 rounded-lg  flex items-center">
             <p className="text-white text-xl sm:text-3xl font-bold pl-7">
               Group Chat
             </p>
           </div>
-          <ReactScrollToBottom className=" mx-8 rounded-md  h-[70%] bg-white">
+          <ReactScrollToBottom className=" mx-8 rounded-md h-[75%]  sm:h-[70%] bg-white">
             {msg.map((item) => (
               <Message
                 item={item}
