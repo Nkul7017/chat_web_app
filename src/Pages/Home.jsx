@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import socketIO from "socket.io-client";
 import ReactScrollToBottom from "react-scroll-to-bottom";
 import Message from "../Components/Message";
-const ENDPOINT = "http://localhost:3001";
+const ENDPOINT = "https://chat-backend-pwt1.onrender.com";
 const socket = socketIO(ENDPOINT);
 
 function Home() {
