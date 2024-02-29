@@ -1,7 +1,12 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Login() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  }, [pathname]);
   const navigate = useNavigate();
   const [data, setData] = useState({
     name: "",
